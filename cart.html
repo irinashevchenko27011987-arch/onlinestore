@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+    <section class="top-cart center">
+        <header class="header">
+            <a class="logo" href="index.html">
+                <img src="./images/logo.svg" alt="лого">
+            </a>
+            <input placeholder="Поиск" class="header__input">
+            <nav class="nav">
+                <a href="catalog.html" class="nav__link">Каталог</a>
+                <a href="cart.html" class="nav__link">Корзина</a>
+            </nav>
+            <div class="nav-mob">
+                <a href=""><img src="/images/gg_search.svg" alt="поиск"></a>
+                <a href="/catalog.html"><img src="/images/Group201.svg" alt="каталог"></a>
+                <a href="/cart.html"><img src="/images/jam_shopping-cart.svg" alt="корзина"></a>
+            </div>
+        </header>
+        <h1 class="top-cart__title">Корзина</h1>
+    </section>
+    <section class="cart center">
+        <div class="cart__content">
+            <div class="cart__name-box">
+                <p>Товар</p>
+                <p>К-во</p>
+            </div>
+            <div class="cart__item">
+                <div class="cart__left">
+                    <img src="./images/menu.jpg" alt="изображение" class="cart__images">
+                    <div class="cart__info">
+                        <h2 class="cart__name">Стол MENU</h2>
+                        <p class="cart__description">Для того чтобы трапезничать было приятно, необходим правильный
+                            обеденный стол.</p>
+                        <p class="cart__price">34 000 руб.</p>
+                        <div class="cart__link-box">
+                            <a href="" class="cart__link">Избранные</a>
+                            <a href="" class="cart__link">Удалить</a>
+                        </div>
+                    </div>
+                </div>
+                <input type="number" class="cart__input" value="1" min="1">
+            </div>
+            <div class="cart__item">
+                <div class="cart__left">
+                    <img src="./images/nastan.jpg" alt="изображение" class="cart__images">
+                    <div class="cart__info">
+                        <h2 class="cart__name">Диван NASTAN</h2>
+                        <p class="cart__description">Модель отличается простотой линий и форм, отсутствием броского
+                            декора.</p>
+                        <p class="cart__price">80 000 руб.</p>
+                        <div class="cart__link-box">
+                            <a href="" class="cart__link">Избранные</a>
+                            <a href="" class="cart__link">Удалить</a>
+                        </div>
+                    </div>
+
+                </div>
+                <input type="number" class="cart__input" value="1" min="1">
+
+            </div>
+            <div class="cart__btn">
+                <a href="" class="clear-cart a-cart">Очистить корзину</a>
+                <a href="catalog.html" class="shopping a-cart">Продолжить покупки</a>
+              </div>
+        </div>
+        <form class="order-form">
+            <div class="order-form__group">
+                <h3 class="order-form__title">Оформление заказа</h3>
+                <div class="order-form__data">
+                    <input placeholder="Имя Фамилия" class="order-form__input" required>
+                    <input placeholder="+ 7 904 000 80 80" class="order-form__input" required>
+                    <input placeholder="Адрес доставки" class="order-form__input" required>
+                </div>
+            </div>
+            <div class="order-form__total">
+                <div class="total">
+                    <span class="label">Итого:</span>
+                    <span class="total__amount">128 000 руб.</span>
+                </div>
+                <button type="submit" class="order-form__btm">Оформить заказ</button>
+            </div>
+        </form>
+    </section>
+    <section class="special center">
+        <h4 class="special__title">Специальные предложения</h4>
+        <div class="product-content">
+            <article class="product">
+                <img src="./images/voda.jpg" alt="изображение" class="product__image">
+                <div class="icons-container"> 
+                    <img src="./images/shopping-bag-line-1.svg" alt="корзина" class="icon-cart">
+                    <img src="./images/favorite.svg" alt="нравится" class="icon-favorite">
+                </div>
+                <h3 class="product__name">Люстра VODA</h3>
+                <p class="product__description">Основание из полированной нержавеющей стали, придает оригинальный
+                    парящий эффект.</p>
+                <div class="product__box-price">
+                    <p class="product__price">45 000 руб.</p>
+                    <p class="product__old-prise">67 000 руб.</p>
+                </div>
+            </article>
+            <article class="product">
+                <img src="./images/roland.jpg" alt="изображение" class="product__image">
+                <div class="icons-container"> 
+                    <img src="./images/shopping-bag-line-1.svg" alt="корзина" class="icon-cart">
+                    <img src="./images/favorite.svg" alt="нравится" class="icon-favorite">
+                </div>
+                <h3 class="product__name">Диван ROLAND</h3>
+                <p class="product__description">Модель отличается простотой линий и форм, отсутствием броского декора.
+                </p>
+                <div class="product__box-price">
+                    <p class="product__price">156 000 руб.</p>
+                    <p class="product__old-prise">198 000 руб.</p>
+                </div>
+            </article>
+            <article class="product">
+                <img src="./images/vent.jpg" alt="изображение" class="product__image">
+                <div class="icons-container"> 
+                    <img src="./images/shopping-bag-line-1.svg" alt="корзина" class="icon-cart">
+                    <img src="./images/favorite.svg" alt="нравится" class="icon-favorite">
+                </div>
+                <h3 class="product__name">Комод VENT</h3>
+                <p class="product__description">Европейский дуб - отличается особой прочностью и стабильностью.</p>
+                <div class="product__box-price">
+                    <p class="product__price">34 000 руб.</p>
+                    <p class="product__old-prise">45 000 руб.</p>
+                </div>
+            </article>
+        </div>
+    </section>
+        <a href="catalog.html" class="a center">Перейти в каталог</a>
+       <footer class="footer center">
+        <a class="logo" href="index.html">
+        <img src="./images/logo-footer.svg" alt="лого" class="footer__logo"></a>
+        <div class="footer-content">
+            <nav class="footer__info">
+                <div class="footer__item">
+                    <h4 class="footer__title">Меню</h4>
+                    <nav class="footer__list">
+                        <a href="index.html" class="footer__link">Главная</a>
+                        <a href="catalog.html" class="footer__link">Каталог</a>
+                        <a href="cart.html" class="footer__link">Корзина</a>
+                    </nav>
+                </div>
+                <div class="footer__item">
+                    <h4 class="footer__title">Контакты</h4>
+                    <a href="tel:+79088008080" class="footer__link">+7 908 800 80 80</a>
+                    <a href="mailto:help@interier.com" class="footer__link">help@interier</a>
+                    <div class="footer-icons">
+                        <a href="https://example.com" class="footer-icons__list"><svg viewBox="0 0 24.0005 14" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24.000488" height="14.000000" fill="none">
+                            <path id="VectorVK" d="M23.45 0.948C23.616 0.402 23.45 0 22.655 0L20.03 0C19.362 0 19.054 0.347 18.887 0.73C18.887 0.73 17.552 3.926 15.661 6.002C15.049 6.604 14.771 6.795 14.437 6.795C14.27 6.795 14.019 6.604 14.019 6.057L14.019 0.948C14.019 0.292 13.835 0 13.279 0L9.151 0C8.734 0 8.483 0.304 8.483 0.593C8.483 1.214 9.429 1.358 9.526 3.106L9.526 6.904C9.526 7.737 9.373 7.888 9.039 7.888C8.149 7.888 5.984 4.677 4.699 1.003C4.45 0.288 4.198 0 3.527 0L0.9 0C0.15 0 0 0.347 0 0.73C0 1.412 0.89 4.8 4.145 9.281C6.315 12.341 9.37 14 12.153 14C13.822 14 14.028 13.632 14.028 12.997L14.028 10.684C14.028 9.947 14.186 9.8 14.715 9.8C15.105 9.8 15.772 9.992 17.33 11.467C19.11 13.216 19.403 14 20.405 14L23.03 14C23.78 14 24.156 13.632 23.94 12.904C23.702 12.18 22.852 11.129 21.725 9.882C21.113 9.172 20.195 8.407 19.916 8.024C19.527 7.533 19.638 7.314 19.916 6.877C19.916 6.877 23.116 2.451 23.449 0.948L23.45 0.948Z" fill="rgb(136.078,136.078,136.078)" fill-rule="evenodd" />
+                        </svg></a>
+                        <a href="https://example.com" class="footer-icons__list"><svg viewBox="0 0 21 17.6758" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21.000000" height="17.675781" fill="none">
+                            <path id="VectorTG" d="M19.2952 0.200894L0.690181 7.4125C-0.0585179 7.74834 -0.311748 8.42087 0.50922 8.78587L5.28221 10.3105L16.8227 3.14143C17.4528 2.69136 18.0979 2.81137 17.5428 3.30647L7.63109 12.3272L7.31974 16.1448C7.60812 16.7342 8.13615 16.737 8.47297 16.444L11.2152 13.8359L15.9117 17.3709C17.0025 18.02 17.596 17.6011 17.8307 16.4114L20.9112 1.74952C21.231 0.285058 20.6856 -0.360199 19.2952 0.200894Z" fill="rgb(136.078,136.078,136.078)" fill-rule="nonzero" />
+                        </svg></a>
+                        <a href="https://example.com" class="footer-icons__list"><svg viewBox="0 0 19 18" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="19.000000" height="18.000000" fill="none">
+                            <path id="VectorDZ" d="M11.3321 10.7357C9.83929 12.195 9.73071 14.0143 9.60178 18C13.5239 18 16.2314 17.9871 17.6293 16.7014C18.9864 15.3771 19 12.69 19 9.09643C14.7929 9.225 12.8725 9.32143 11.3321 10.7357ZM0 9.09643C0 12.69 0.0135714 15.3771 1.37071 16.7014C2.76857 17.9871 5.47607 18 9.39821 18C9.2625 14.0143 9.16071 12.195 7.66786 10.7357C6.1275 9.32143 4.20714 9.21857 0 9.09643ZM9.39821 0C5.48286 0 2.76857 0.0128571 1.37071 1.29857C0.0135714 2.62286 0 5.31 0 8.90357C4.20714 8.775 6.1275 8.67857 7.66786 7.26429C9.16071 5.805 9.26929 3.98571 9.39821 0ZM11.3321 7.26429C9.83929 5.805 9.73071 3.98571 9.60178 0C13.5239 0 16.2314 0.0128571 17.6293 1.29857C18.9864 2.62286 19 5.31 19 8.90357C14.7929 8.775 12.8725 8.67857 11.3321 7.26429Z" fill="rgb(136.078,136.078,136.078)" fill-rule="nonzero" />
+                        </svg></a>
+                    </div>
+                </div>
+            </nav>
+            <form class="form">
+                <p class="form__text">Получайте наши новости и обновления</p>
+                <input placeholder="Ваш email" class="form__input">
+                <button class="form__btn">Подписаться</button>
+            </form>
+        </div>
+    </footer>
+</body>
+</html>
