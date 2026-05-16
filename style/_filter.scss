@@ -25,7 +25,7 @@
   background-color: white;
   padding: 9px 54px 11px 23px;
   font-size: $font-size-base;
-  background-image: url(/images/Polygon\ 1.svg);
+  background-image: url(../images/Polygon\ 1.svg);
   background-position: calc(100% - 20px);
   background-size: 10px;
   background-repeat: no-repeat;
@@ -44,7 +44,7 @@
   border: 1px solid rgba(0, 0, 0, 1);
   background: rgb(196, 196, 196);
   transition: 1s;
-  background-image: url(/images/Polygon\ 1.svg);
+  background-image: url(../images/Polygon\ 1.svg);
   background-position: calc(100% - 20px);
   background-size: 10px;
   background-repeat: no-repeat;
@@ -152,7 +152,7 @@
 
 .radio input[type=radio]:checked+label::before {
   border: 1px solid rgb(0, 0, 0);
-  background-image: url(/images/Vector\ 1.svg);
+  background-image: url(../images/Vector\ 1.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
